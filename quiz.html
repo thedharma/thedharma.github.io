@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Tester- Quiz</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/jpg" href="/img/white_tower.ico" />
+  </head>
+  <script type="module" src="js/quiz/main.js"></script>
+  <body>
+    <h1 id="quiz-title" class="hidden">
+      <span id="quiz-name"></span> Vocab Quiz
+    </h1>
+    <br />
+    <div id="container">
+      <div id="stats">
+        <p id="time-display">
+          <u>Timer</u> <br />
+          <span id="mins">00</span>:<span id="secs">00</span>
+        </p>
+
+        <p id="score-display">
+          <u>Score</u> <br /><span id="score">0</span>/<span id="total-answers"
+            >0</span
+          >
+          (<span id="percentage">0</span>%)
+        </p>
+      </div>
+      <main id="main-quiz">
+        <label for="quiz-answer" id="quiz-question"
+          >Type the following words in Greek:<br /><br />
+          <span id="test-word"></span><br /><span id="supplement-text"></span
+        ></label>
+        <br />
+        <br />
+        <input id="quiz-answer" type="text" autocomplete="off" />
+        <br /><br />
+        <p id="feedback">Waiting</p>
+      </main>
+    </div>
+
+    <div id="pageCover"></div>
+    <div id="summary">
+      <h2>Quiz Complete</h2>
+      <p>
+        Your score is <span id="final-score">0</span>/<span
+          id="final-total-answers"
+          >0</span
+        >
+        (<span id="final-percentage">0</span>%) <br /><br />
+
+        <button type="button" id="replay-game-button">Replay Quiz</button>
+        <button type="button" id="review-game-button" disabled>
+          Review Quiz
+        </button>
+        <br /><br />
+        <a href="/"><button type="button">New Quiz</button></a>
+      </p>
+    </div>
+  </body>
+</html>
